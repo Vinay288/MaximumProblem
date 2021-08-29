@@ -12,6 +12,11 @@ public class MaximumProbelm {
 		Float secondFloat = 1.23f;
 		Float thirdFloat = 2.12f;
 		findMaxOfThree(firstFloat, secondFloat, thirdFloat);
+		
+		String firstString= "first";
+		String secondString ="second";
+		String thirdString = "third";
+		findMaxOfThree(firstString, secondString, thirdString);
 	}
 
 	public static void maxOfThreeNumbers(Integer one, Integer two, Integer three) {
@@ -24,5 +29,10 @@ public class MaximumProbelm {
 		Float maximumOfTwoFloats = (one.compareTo(two) > 0 ? one : two);
 		Float maximumFloat = (one.compareTo(three) > 0 ? one : three);
 		System.out.println("Maximum of three integers are:" + maximumFloat);
+	}
+	public static void findMaxOfThree(String one, String two,String three) {
+		String maximumOfTwoStrings = (one.compareTo(two) > 0 ? one : two);
+		String maximumString = (one.compareTo(three) > 0 ? one : three);
+		System.out.println("Maximum of three integers are:" + maximumString);
 	}
 }
